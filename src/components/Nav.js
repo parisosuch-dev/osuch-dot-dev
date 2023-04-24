@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Contact from "../pages/Contact";
 
 export default function Navbar({ fixed }) {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -64,7 +65,7 @@ export default function Navbar({ fixed }) {
                                 <Link to='/resume' className="px-3 py-2 flex items-center sm:text-3xl text-xl font-bold leading-snug text-white hover:opacity-75">resume</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='/contact' className="px-3 py-2 flex items-center sm:text-3xl text-xl font-bold leading-snug text-white hover:opacity-75">contact</Link>
+                                <Contact label="contact" mailto="mailto:parisosuch.dev@gmail.com" className="px-3 py-2 flex items-center sm:text-3xl text-xl font-bold leading-snug text-white hover:opacity-75"/>
                             </li>
                         </ul>
                     </div>

@@ -3,7 +3,7 @@ import Navbar from '../components/Nav';
 
 export default function Resume() {
     return (
-        <div className='bg-osuch-black pb-2'>
+        <div className='min-h-screen bg-osuch-black pb-2'>
             <Navbar />
             <div className="relative flex flex-col justify-between px-2 py-3 mb-3">
                 <div className="container px-4 mx-auto flex flex-col justify-between sm:space-y-5 space-y-2">
@@ -42,6 +42,18 @@ export default function Resume() {
                             </ul>
                         </div>
 
+                    </div>
+                    <h2 className="sm:text-5xl text-xl font-bold text-osuch-secondary">Education</h2>
+                    <div className='space-y-2'>
+                        <div className='mt-2 space-y-1'>
+                            <h3 className='sm:text-4xl text-md text-white font-medium'>B.S in Computer Science, Sonoma State University</h3>
+                            <h4 className='sm:text-2xl text-xs text-white font-thin'>Fall 2018 - Spring 2023</h4>
+                            <h3 className='sm:text-3xl text-sm text-white'>Minor in Astronomy</h3>
+                            <h3 className='sm:text-3xl text-sm text-white'>Member of MESA (Mathematics, Engineering, Science Achievement)</h3>
+                            <h3 className='sm:text-3xl text-sm text-white'>Member of Sonoma State Computer Science Club</h3>
+                            <h3 className='sm:text-3xl text-sm text-white'>Creative and Technical Director of Sonoma State eSports</h3>
+                            <h3 className='sm:text-3xl text-sm text-white'>Vice President & Team Manager of Sonoma State eSports' Rocket Leage Team</h3>
+                        </div>
                     </div>
                 </div>
             </div>
