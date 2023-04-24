@@ -7,7 +7,9 @@ module.exports = {
         proxima: ["ProximaNova"]
       },
       colors: {
-        'osuch-black': "#151515",
+        'osuch-black': '#151515',
+        'osuch-primary': '#7888F3',
+        'osuch-secondary': '#C1C8F4'
       },
     },
   },
