@@ -4,6 +4,8 @@ import Landing from './pages/Landing';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+// vercel analytics for page
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path='/portfolio' element={<Portfolio/>}></Route>
         <Route path='/resume' element={<Resume/>}></Route>
       </Routes>
+      <Analytics/>
     </Router>
   );
 }
