@@ -4,8 +4,11 @@ import Landing from './pages/Landing';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import { Blog } from './pages/Blog';
+import { Admin } from './pages/Admin';
 // vercel analytics for page
 import { Analytics } from '@vercel/analytics/react';
+import { BlogPost } from './pages/BlogPost';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Route path='/about' element={<About/>}></Route>
         <Route path='/portfolio' element={<Portfolio/>}></Route>
         <Route path='/resume' element={<Resume/>}></Route>
+        <Route path='/blog' element={<Blog/>}></Route>
+        <Route path='/blog/:id' element={<BlogPost/>}></Route>
+        <Route path='/admin' element={<Admin/>}></Route>
       </Routes>
       <Analytics/>
     </Router>
